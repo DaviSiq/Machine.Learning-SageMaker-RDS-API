@@ -25,7 +25,7 @@ train_data = f's3://{bucket}/modified_hotel_reservations.csv'
 # Configurar o estimador SKLearn
 FRAMEWORK_VERSION = "0.23-1"
 sklearn_estimator = SKLearn(
-    entry_point="treinamento_script.py",
+    entry_point="treino_instancia/treinamento_script_instancia.py",
     role=role,
     instance_count=1,
     instance_type="ml.m5.xlarge",
