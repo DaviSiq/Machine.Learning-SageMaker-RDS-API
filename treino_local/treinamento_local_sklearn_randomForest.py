@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
 
 # Carregar o CSV 
-df = pd.read_csv('modified_hotel_reservations.csv')
+df = pd.read_csv('csv_config/modified_hotel_reservations.csv')
 
 #Testando sem as colunas id e status
 df = df.drop(columns=['Booking_ID', 'booking_status'])
