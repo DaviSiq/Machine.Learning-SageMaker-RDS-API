@@ -1,0 +1,21 @@
+# Use a imagem oficial do Python
+FROM python:3.8-slim
+
+# Define o diretório de trabalho
+WORKDIR /app
+
+# Copia o arquivo requirements.txt e instala as dependências
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copia todo o conteúdo da pasta atual para o diretório de trabalho
+COPY . .
+
+# Define a variável de ambiente para indicar que estamos no ambiente de produção
+ENV FLASK_ENV=production
+
+# Expõe a porta 5000 para o Flask
+EXPOSE 5000
+
+# Define o comando para rodar a aplicação
+CMD ["python", "app.py"]
