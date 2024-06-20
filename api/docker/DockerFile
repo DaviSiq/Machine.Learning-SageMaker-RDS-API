@@ -1,5 +1,5 @@
 # Use a imagem oficial do Python
-FROM python:3.8-slim
+FROM python:3.8
 
 # Define o diretório de trabalho
 WORKDIR /app
@@ -18,4 +18,4 @@ ENV FLASK_ENV=production
 EXPOSE 5000
 
 # Define o comando para rodar a aplicação
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
