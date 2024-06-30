@@ -8,7 +8,7 @@ Este repositório é um estudo e implementação de um projeto de Machine Learni
 - **SageMaker**: Treinamento de modelos com AWS SageMaker usando dados do AWS S3, salvando o modelo no S3.
 - **API de Inferência**: API em Python (Flask/FastAPI) em Docker para carregar o modelo do S3 e realizar predições via `/api/v1/predict`.
 ### Aplicação rodando localmente
-![Print da Aplicação](print_local.jpg)
+![Print da Aplicação](python\assets\print_local.jpg)
 
 ## Estrutura do Projeto
 
